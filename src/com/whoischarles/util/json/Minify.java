@@ -127,7 +127,8 @@ public class Minify {
     this.out = out;
     this.line = 0;
     this.column = 0;
-    currChar = '\n';
+    currChar = get();
+    nextChar = peek();
     action(Action.DELETE_NEXT);
 
     // Process input
